@@ -50,7 +50,6 @@ const imageGrid = document.getElementById("image-grid");
 const timerText = document.getElementById("timer-text");
 const timerBox = document.getElementById("timer-box");
 const verifyBtn = document.getElementById("verify-btn");
-const resetBtn = document.getElementById("reset-btn");
 const failureOverlay = document.getElementById("failure-overlay");
 const successModal = document.getElementById("success-modal");
 const failureModal = document.getElementById("failure-modal");
@@ -216,7 +215,6 @@ function showCaptcha() {
 }
 
 verifyBtn.onclick = handleVerify;
-resetBtn.onclick = resetCaptcha;
 tryAgainBtn.onclick = resetCaptcha;
 
 // Continue button should probably go somewhere else or reset the whole flow
